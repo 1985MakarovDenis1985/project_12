@@ -40,6 +40,12 @@ src: url('../fonts/Montserrat-Medium.ttf');
 font-weight: normal;
 font-style: normal;}
 
+/* html{
+  width: auto;
+  background: red;
+  padding: 0px !important;
+  margin: 0px !important
+} */
 
 div{
   border: 1px solid transparent;
@@ -49,6 +55,10 @@ a{
   text-decoration: none !important;
 }
 
+p{
+  color: #706d6b;
+}
+
 
 /* HEADER */
 .left, .right{
@@ -56,13 +66,11 @@ a{
   background: red;
 }
 .header{
-  /* border: 1px solid black; */
   height: 750px;
   background-image:url(../img/header_fon.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  /* background-color: yellow; */
 }
           @media all and (max-width: 1440px) {
              .header{
@@ -82,7 +90,6 @@ a{
   line-height: 75px;
   font-family: 'Montserrat-Light';
   font-size: 14pt;
-  margin-left: 5%;
   float: right;
   margin-left: 3% !important;
   height: 50px;
@@ -155,17 +162,31 @@ a{
 
                                 @media all and (max-width: 1350px) {
                                    .header_logo_text{
-
-
                                      margin-left: 57%;
                                           }}
 
                                           @media all and (max-width: 1270px) {
                                              .header_logo_text{
-
                                                margin-top: 160px;
-
                                                     }}
+                                                    @media all and (max-width: 700px) {
+                                                       .header_logo_text{
+                                                         margin-top: 160px;
+                                                         font-size: 21pt;
+                                                              }}
+                                                              @media all and (max-width: 600px) {
+                                                                 .header_logo_text{
+                                                                   margin-top: 160px;
+                                                                   font-size: 15pt;
+                                                                   margin-left: 180px;
+                                                                        }}
+                                                                        @media all and (max-width: 350px) {
+                                                                           .header_logo_text{
+                                                                             margin-top: 160px;
+                                                                             font-size: 13pt;
+                                                                             margin-left: 150px;
+                                                                                  }}
+
 /* HEADER */
 
 /* UNDERHEADER */
@@ -203,7 +224,12 @@ a{
                     @media all and ( max-width: 990px) {
                        .underheader_palm{
                         right: 8%;
+                        margin-top: -160px;
                               }}
+                              @media all and ( max-width: 600px) {
+                                 .underheader_palm{
+                                opacity: 0.3
+                                        }}
 
 .underheader_center_top-block{
   height: 250px;
@@ -234,7 +260,6 @@ a{
 
 .center_top-block_line:hover{
   width: 600px;
-
 }
 
 
@@ -331,11 +356,15 @@ a{
                                 .--underheader_center_bottom_right-block-underline:hover{
                                      width: 190px;
                                         }}
-                                    @media all and (max-width: 1740px) {
-                                       .--underheader_center_bottom_right-block-text{
-                                         margin-top: 50px;
-                                          font-size: 25pt;
-                                            }}
+                                        @media all and (max-width: 440px) {
+                                        .--underheader_center_bottom_right-block-underline:hover{
+                                             width: 120px;
+                                                }}
+                                            @media all and (max-width: 1740px) {
+                                               .--underheader_center_bottom_right-block-text{
+                                                 margin-top: 50px;
+                                                  font-size: 25pt;
+                                                    }}
 
 
                           @media all and (max-width: 660px) {
@@ -343,6 +372,16 @@ a{
                                margin-top: 50px;
                                 font-size: 21pt;
                                   }}
+                                  @media all and (max-width: 660px) {
+                                     .--underheader_center_bottom_right-block-text{
+                                       margin-top: 70px;
+                                        font-size: 17pt;
+                                          }}
+                                          @media all and (max-width: 320px) {
+                                             .--underheader_center_bottom_right-block-text{
+                                               margin-top: 70px;
+                                                font-size: 15pt;
+                                                  }}
 
 .--underheader_center_bottom_right-block-text_second{
   font-family: 'Montserrat-Regular';
@@ -377,6 +416,12 @@ a{
            .center_top-block_buttom{
               margin-top: 25px;
                   }}
+                  @media all and (max-width: 440px) {
+                     .center_top-block_buttom{
+                       width: 130px;
+                       height: 40px;
+                       font-size: 11pt;
+                            }}
 
 
 .center_top-block_buttom:hover{
@@ -404,6 +449,7 @@ a{
   transition: 1s;
   position: relative;
   z-index: 10;
+  color: #333333;
 }
 
 .belt_top_text:hover ~ .belt_top_text_underline{
@@ -561,14 +607,18 @@ a{
 }
 
 .belt_second-content{
-  height: 700px;
+  /* height:1700px; */
   box-shadow: 0px 0px 31px 5px #d2d2d2;
   margin-bottom: 100px;
+  border-bottom:  3px solid #28597a;
+  position: relative;
+  z-index: 10;
 }
 
 .belt_second-content_toptext{
   font-family: 'myriadpro-regular';
   font-size: 21pt;
+  margin-top: 30px;
 }
 
 .cover-text{
@@ -607,6 +657,7 @@ border: none;
   font-family: 'Montserrat-SemiBold';
   font-size: 40pt;
   margin-left: -5px !important;
+  color: #454545;
 
 }
       @media all and (max-width: 1400px) {
@@ -649,13 +700,111 @@ border: none;
                                       font-size: 4pt;
                                         }}
 
+.cost-text{
+  margin-top: 10px;
+}
+
+.text-left{
+  font-family: 'myriadpro-regular';
+  font-size: 9pt;
+  padding: 10px;
+}
+    @media all and (max-width: 600px) {
+      .text-left{
+        font-size: 6pt;
+              }}
+              @media all and (max-width: 400px) {
+                .text-left{
+                  font-size: 4pt;
+                        }}
 
 
+.task-number{
+  color: #4c4846;
+}
 
+.result_top_block{
+  margin-top: 50px;
+  border-bottom: 3px solid #28597a;
+  border-right: 3px solid #28597a;
+  height: 110px;
+}
 
+.result_bottom_block{
+  border-right: 3px solid #28597a;
+  height: 110px;
+  margin-top: -21px;
+}
 
+.result_left_block{
+    margin-right: -17px;
+}
 
+.--result_right_block{
+  border-right: none;
+  border-left: 3px solid #28597a;
+  margin-left: -17px;
+}
 
+.results_item{
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/sprite_second-description.png);
+  background-position: 0px -30px;
+  margin: auto;
+}
+
+.--botton-left-item{
+  background-position: -70px -30px;
+}
+
+.--top-right-item{
+  background-position: -130px -30px;
+}
+
+.--botton-right-item{
+  background-position: -200px -30px;
+}
+
+.results_text{
+  font-family: 'myriadpro-regular';
+  font-size: 13pt;
+  margin-top: 5px;
+}
+      @media all and (max-width: 440px) {
+          .results_text{
+              font-size: 8pt;
+              margin-top: 7px;
+              }}
+
+/* .results_under_text{
+    font-size: 9pt;
+    margin-bottom: 100px;
+} */
+
+.--main-content-text{
+  margin-bottom: 40px;
+}
+
+.main-content_button{
+  display: block;
+  margin: auto;
+  width: 130px;
+  height: 40px;
+  background: #28597a;
+  color: white;
+  position: relative;
+  z-index: 100;
+  margin-top: -120px;
+  transition: 0.5s;
+  border: 3px solid transparent;
+}
+
+.main-content_button:hover{
+  border: 3px solid #28597a;
+  background: white;
+  color: #28597a;
+}
 
 
 /* MAIN CONTENT */
